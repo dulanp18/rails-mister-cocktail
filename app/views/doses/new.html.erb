@@ -1,0 +1,17 @@
+<nav class="navbar navbar-light bg-light">
+  <%= link_to "The Bar", cocktails_path, class: "navbar-brand" %>
+  <%= link_to "Back To Drink", cocktail_path(@cocktail), class: "btn btn-primary" %>
+</nav>
+
+
+<div class="text-center container p-3">
+  <h1 class="m-3"> Lets Make A Dose</h1>
+  <p>Describe How Much You Want To Add And Pick An Ingredient</p>
+  <div class="p-3 m-5">
+    <%= simple_form_for [ @cocktail, @dose ], html: { class: 'm-3' } do |f| %>
+      <%= f.input :description %>
+      <%= f.association :ingredient %>
+      <%= f.button :submit, class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
