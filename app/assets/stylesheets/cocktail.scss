@@ -2,22 +2,51 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-.main-page-banner {
-  background-color: grey;
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  padding: 30px;
+.card-title {
+  font-family: $bar-font;
+  margin-top: 50px;
+  margin-left: 40px;
+
+  a {
+    color: white;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
 
-.index-page-banner {
-  width: 100%;
-  padding: 30px;
-  margin-top: 10%;
-  h1,p {
+.cocktail-img {
+  border-radius: 10%;
+}
+
+.doses-list {
+  margin: 30px;
+
+  li {
     color: white;
+    font-family: $bar-font
   }
 
+  i {
+    color: white;
+  }
 }
 
+.cocktail-actions {
+  margin: 30px;
+}
+
+.cocktail-body {
+  padding: 50px;
+}
+
+
+.cocktail-form {
+  margin-top: 50px;
+  label {
+    color: white;
+  }
+}
 

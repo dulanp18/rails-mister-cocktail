@@ -1,29 +1,27 @@
-<nav class="navbar navbar-light bg-light">
-  <%= link_to "The Bar", cocktails_path, class: "navbar-brand" %>
-  <%= link_to "Back To The Bar", cocktails_path, class: "btn btn-primary" %>
+<nav class="navbar navbar-bg">
+  <%= link_to "The Bar", cocktails_path, class: "navbar-logo" %>
+  <%= link_to "Back To The Bar", cocktails_path, class: "navbar-btn" %>
 </nav>
 
 
-<div class="jumbotron text-center">
+<div class="name-banner text-center">
   <h1 class="display-4">The <%= @cocktail.name %> </h1>
 </div>
 
-<%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
 
-
-<div class="container text-center">
-<ul class="text-center list-unstyled">
-  <% @cocktail.doses.each do |dose| %>
-    <li> <%= dose.description %> of <%= dose.ingredient.name %> <%= link_to "Delete",
-                  dose_path(dose),
-                  method: :delete,
-                  data: { confirm: "Are you sure?" }, class: "btn btn-secondary"%></li>
-  <% end %>
-</ul>
-<div>
-  <%= link_to "Add New Dose", new_cocktail_dose_path(@cocktail) , class: "btn btn-primary m-2" %>
-</div>
-<div>
-  <%= link_to "Back To The Bar", cocktails_path, class: "btn btn-primary m-2" %>
-</div>
+<div class="container d-flex cocktail-body">
+  <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill, class: "cocktail-img" %>
+  <div class="doses-list">
+    <ul class="text-center list-unstyled">
+      <% @cocktail.doses.each do |dose| %>
+        <li> <%= dose.description %> of <%= dose.ingredient.name %> &nbsp &nbsp &nbsp &nbsp <%= link_to dose_path(dose),
+                      method: :delete,
+                      data: { confirm: "Are you sure?" } do %> <i class= "far fa-trash-alt" style=""></i> <% end %></li>
+      <% end %>
+    </ul>
+    <div class="cocktail-actions">
+      <%= link_to "Add New Dose", new_cocktail_dose_path(@cocktail) , class: "navbar-btn" %>
+      <%= link_to "Back To The Bar", cocktails_path, class: "navbar-btn" %>
+    </div>
+  </div>
 </div>

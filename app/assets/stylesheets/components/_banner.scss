@@ -1,0 +1,52 @@
+
+
+.index-banner {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80');
+  background-size: cover;
+  height: 100vh;
+  color: #eee;
+  text-align: center;
+  padding-top: 40vh;
+  margin-bottom: 30px;
+  h1 , p {
+  font-family: $bar-font;
+  }
+}
+
+.home-banner {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=986&q=80');
+  background-size: cover;
+  height: 100vh;
+  color: #eee;
+  text-align: center;
+  padding-top: 40vh;
+  margin-bottom: 30px;
+  font-family: $bar-font;
+
+  h1 {
+    font-size: 100px;
+    font-family: $bar-font;
+    text-shadow: 2px 2px 8px #FF0000;
+  }
+}
+
+.name-banner {
+  background-color: white;
+  height: 50vh;
+  padding-top: 20vh;
+  margin-bottom: 30px;
+  h1 {
+  font-family: $bar-font;
+  text-shadow: 2px 2px 8px #FF0000;
+  }
+}
+
+.task-banner {
+  background-color: white;
+  height: 50vh;
+  padding-top: 20vh;
+  text-align: center;
+  h1 {
+  font-family: $bar-font;
+  }
+}

@@ -10,3 +10,36 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.navbar-bg {
+  background-color: #7D0633;
+}
+
+.navbar-logo {
+  color: white;
+  font-family: $bar-font;
+  font-size: 30px;
+
+  &:hover {
+  color: white;
+  font-family: $bar-font;
+  font-size: 30px;
+  }
+}
+
+.navbar-btn {
+  border-radius: 5%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  font-family: $bar-font;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+    font-family: $bar-font;
+    font-style: bold;
+    background-color: #7D0633;
+  }
+}
