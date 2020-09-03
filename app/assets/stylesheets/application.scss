@@ -11,9 +11,9 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
-@import "cocktail";
+$bar-font: 'Poppins', 'sans-serif';
 
-body{
+body {
   background-color: #7D0633;
   font-family: $bar-font;
 }
